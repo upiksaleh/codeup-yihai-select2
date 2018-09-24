@@ -1,0 +1,30 @@
+{
+  "name": "oit/codeup-yihai-select2",
+  "description": "codeup-yihai select2 widget",
+  "keywords": [
+    "codeup",
+    "yihai",
+    "orangeit",
+    "oit",
+    "yii2",
+    "framework",
+    "select2"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "upik",
+      "email": "upxsal@gmail.com"
+    }
+  ],
+  "require": {
+    "oit/codeup-yihai": "*",
+    "bower-asset/select2": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "codeup\\widgets\\select2\\": "src"
+    }
+  }
+}
