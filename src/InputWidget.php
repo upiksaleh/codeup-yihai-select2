@@ -9,6 +9,7 @@
 namespace codeup\widgets\select2;
 
 use Yii;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
 use yii\web\JsExpression;
 use yii\helpers\Url;
@@ -76,6 +77,8 @@ class InputWidget extends \codeup\theming\InputWidget
      * @var string[] the JavaScript event handlers.
      */
     public $events = [];
+
+    public $codeupRest = [];
     /**
      * @inheritdoc
      */
@@ -106,6 +109,14 @@ class InputWidget extends \codeup\theming\InputWidget
         if (!isset($this->options['class'])) {
             $this->options['class'] = 'form-control';
         }
+//        if(!empty($this->codeupRest)){
+//            $this->settings['ajax'] = ArrayHelper::merge([
+//                'result' => new JsExpression('function(data) {return data.items}'),
+//                'data' => new JsExpression('funciton(params){
+//
+//                }')
+//            ],$this->codeupRest);
+//        }
 //        if ($this->bootstrap) {
 //            $this->options['data-theme'] = 'bootstrap';
 //        }
