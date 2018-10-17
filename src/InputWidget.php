@@ -9,9 +9,7 @@
 namespace codeup\widgets\select2;
 
 use Yii;
-use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
-use yii\web\JsExpression;
 use yii\helpers\Url;
 use codeup\theming\Html;
 
